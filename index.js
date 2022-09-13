@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const jsonParser = express.json()
 const app = express();
-
+// http://localhost:3000/rates?currency=
 app.get(`/rates`, jsonParser, (req, res) => {
     axios.get(`https://api.coincap.io/v2/rates/${req.query.currency}`)
     .then((response)=>{

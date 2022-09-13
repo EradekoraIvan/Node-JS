@@ -19,6 +19,6 @@ app.get(`/rates`, jsonParser, (req, res) => {
 })
 
 const PORT = 3000
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log(`Server started: http://locallhost:${PORT}`)
 })
